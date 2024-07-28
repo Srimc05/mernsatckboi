@@ -1,0 +1,149 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Navbar from "./component/Navbar/Navbar";
+import Home from "./component/Home/Home";
+import Coffecard from "./component/Home/Coffecard";
+import Banner from "./component/Home/Banner";
+import { Coffee } from "lucide-react";
+
+import CounterSection from "./component/Home/CounterSection";
+import Test from "./component/Home/Test";
+import Testi from "./component/Home/Testi";
+import Foooter from "./component/Home/Foooter";
+import Cafeinfo from "./component/Home/Cafeinfo";
+
+const Applayout = () => {
+  return (
+    <>
+    <Navbar/>
+    <Home/>
+    <Coffecard/>
+    <Banner/>
+    <CounterSection/>
+    <Testi/>
+
+    <Foooter/>
+
+     
+    </>
+  );
+};
+
+
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <Applayout/>,
+  },
+  {
+    path: "/cafeinfo",
+    element: <Cafeinfo />,
+  },
+]);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<RouterProvider router={appRouter} />);
+
+
+
+/*
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Navbar from "./component/Navbar/Navbar";
+import Home from "./component/Home/Home";
+import Coffecard from "./component/Home/Coffecard";
+import Banner from "./component/Home/Banner";
+import { Coffee } from "lucide-react";
+
+import CounterSection from "./component/Home/CounterSection";
+import Test from "./component/Home/Test";
+import Testi from "./component/Home/Testi";
+import Foooter from "./component/Home/Foooter";
+import Cafeinfo from "./component/Home/Cafeinfo";
+
+const Applayout = () => {
+  return (
+    <>
+    <Navbar/>
+    <Home/>
+    <Coffecard/>
+    <Banner/>
+    <CounterSection/>
+    <Testi/>
+
+    <Foooter/>
+
+     
+    </>
+  );
+};
+
+
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <Applayout/>,
+  },
+  {
+    path: "/cafeinfo",
+    element: <Cafeinfo />,
+  },
+]);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<RouterProvider router={appRouter} />);
+*/
+
+
+
+
+
+
+
+
+/*
+ THIS TYPE OF PROPS IS CALLED DESTRUCTING ON FLIES
+
+const Card =(jobTitle,companyname,Tag,joboffer,startdate,experience)=>{
+    return(
+        <>
+        <div className="shadow-lg  p-5 rounded-3xl">
+            <img className="h-10" src="https://ik.imagekit.io/sri05/apel_aja.jpg?updatedAt=1710695112080" alt="logo" />
+            <p>{jobTitle}</p>
+            <p>{companyname}</p>
+            <p>Tags : {Tag}</p>
+            <p>Job offers : {joboffer}</p>
+            <p>Start date : {startdate} </p>
+            <p>Experience : {experience}</p>
+
+        </div>
+        
+        
+        </>
+
+        const express = require("express");
+
+// Create an Instance in Express
+const app = express();
+
+// GET : localhost:3000/
+app.get("/", (req, res) => {
+  res.send("Hello World");
+});
+
+// GET : localhost:3000/app
+app.get("/app", (req, res) => {
+  return res.send("Test");
+});
+
+app.get("/cat", (req, res) => {
+  return res.json({ message: "Hello" });
+});
+
+app.listen(3000);
+    )
+}*/
+
+//how to create  props: key={value} and add props in the argument of react component  lineno:11 and to render it  notation such as {job.title} and props in different name can be given such as xyz and render it as xyz.title
+//to access object in property two method : dot notation and bracket notation
+//uuid is used to aviod the warnin provides unique id
+
+//for each
